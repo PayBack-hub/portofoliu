@@ -7,8 +7,6 @@
   --gri-mediu: #d4d4d4;
   --gri-soft-inchis: #c2c2c2;
 
-
-
   --galben: #facc15; /* accent cald, atrăgător */
   --galben-hover: #eab308;
 
@@ -26,7 +24,14 @@ html {
   background-color: var(--gri);
   font-size: 62.5%;
   line-height: 1.6;
-  max-width: 1200px;
+}
+
+header * {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  display: block;
 }
 
 header {
@@ -36,11 +41,13 @@ header {
   flex-direction: column;
   background-color: var(--gri-inchis);
   color: var(--gri);
-  padding: 0 1.5rem;
+  padding: 2rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   position: sticky;
   top: 0;
   z-index: 1000;
+  width: 100%;
+  margin: 0 auto;
 }
 
 header h1 {
@@ -134,78 +141,78 @@ header h3 {
   font-size: 1.2rem;
   padding-right: 1rem;
   font-style: italic;
-    text-decoration: underline;
-    font-family: 'Segoe UI', sans-serif;
-    font-weight: 500;
+  text-decoration: underline;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 500;
 }
 
 .right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
 }
 
 .sub-titlu {
-    font-size: 2rem;
-    color: var(--gri-inchis);
-    font-weight: bold;
-    text-decoration: underline;
-    text-decoration-color: var(--galben);
-    animation: fadeInText 1s ease-in-out;
+  font-size: 2rem;
+  color: var(--gri-inchis);
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: var(--galben);
+  animation: fadeInText 1s ease-in-out;
 }
 
 p {
-    font-size: 1.2rem;
-    color: var(--gri-foarte-inchis);
-    padding-top: 1rem;
-    text-indent: 0.4rem;
+  font-size: 1.2rem;
+  color: var(--gri-foarte-inchis);
+  padding-top: 1rem;
+  text-indent: 0.4rem;
 }
 
 footer {
-    background-color: var(--gri-inchis);
-    text-align: center;
+  background-color: var(--gri-inchis);
+  text-align: center;
 }
 
 footer p {
-    color: var(--alb);
-    font-size: 1.4rem;
+  color: var(--alb);
+  font-size: 1.4rem;
 }
 
 .motto {
-    font-style: italic;
-    color: var(--galben);
-    font-size: 1.5rem;
+  font-style: italic;
+  color: var(--galben);
+  font-size: 1.5rem;
 }
 
 footer ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
 
 footer ul li {
-    display: inline;
-    margin-bottom: 1rem;
+  display: inline;
+  margin-bottom: 1rem;
 }
 
 footer ul li a {
-    color: var(--alb);
-    text-decoration: none;
-    font-size: 2rem;
-    transition: color 0.3s ease;
+  color: var(--alb);
+  text-decoration: none;
+  font-size: 2rem;
+  transition: color 0.3s ease;
 }
 
 footer ul li a:hover {
-    color: var(--galben);
-    text-decoration: underline;
-    text-decoration-color: var(--galben);
-    font-weight: bold;
-    text-shadow: 0 0 5px var(--galben), 0 0 10px var(--galben);
-    transition: all 0.3s ease;  
+  color: var(--galben);
+  text-decoration: underline;
+  text-decoration-color: var(--galben);
+  font-weight: bold;
+  text-shadow: 0 0 5px var(--galben), 0 0 10px var(--galben);
+  transition: all 0.3s ease;
 }
 
 /* Media Queries */
@@ -259,8 +266,34 @@ footer ul li a:hover {
   }
 }
 
+@media (min-width: 1200px) {
+  body {
+    font-size: 1.7rem;
+  }
+  header {
+    max-width: 1400px;
+    padding: 0 3rem;
+  }
 
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    width: 100%;
+  }
 
+  .left,
+  .right {
+    padding: 3rem;
+  }
 
+  header h1,
+  header h3 {
+    font-size: 3.5rem;
+  }
 
-
+  .left h2,
+  .right h2 {
+    font-size: 2.5rem;
+  }
+}
