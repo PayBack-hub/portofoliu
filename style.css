@@ -6,7 +6,7 @@
   --card-bg: #26354e; /* fundal carduri proiecte */
   --shadow: rgba(0, 255, 231, 0.2); /* umbră subtilă pe hover */
   --text-span: #6fe6fc;
-  --background-btn: #BBFBFF;
+  --background-btn: #bbfbff;
 }
 
 * {
@@ -16,7 +16,7 @@
 }
 
 body {
-  background-image: url(./img/img\ \(2\).jpg);
+  background-image: url(./img/img\\(2\).jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -81,17 +81,17 @@ header {
 }
 
 #dropdown-menu {
-    background: transparent;
+  background: transparent;
 }
 
 #btn-drop {
-    background: transparent;
-    color: var(--text-light);
+  background: transparent;
+  color: var(--text-light);
 }
 
 #btn-drop:hover {
-    background: var(--accent);
-    color: var(--bg-dark);
+  background: var(--accent);
+  color: var(--bg-dark);
 }
 
 .btn1:hover {
@@ -112,7 +112,7 @@ header {
   font-size: 4rem;
   color: var(--text-light);
   text-shadow: 0 0 5px var(--accent);
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 .hero-section p {
@@ -122,152 +122,154 @@ header {
 }
 
 .projects {
-    margin-top: 20px;
-    padding: 20px;
-    color: var(--text-light);
-
+  margin-top: 20px;
+  padding: 20px;
+  color: var(--text-light);
 }
 
 .projects h1 {
-    font-size: 3rem;
-    color: var(--text-light);
-    margin-bottom: 10px;
-    text-align: center;
-    text-decoration: underline;
-    text-decoration-color: var(--accent);
-    text-shadow: 0 0 5px var(--accent);
+  font-size: 3rem;
+  color: var(--text-light);
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-shadow: 0 0 5px var(--accent);
 }
 
 #p {
-    text-align: center;
-    font-size: 1.5rem;
-    color: var(--text-light);
-    text-shadow: 0 0 5px var(--accent);
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--text-light);
+  text-shadow: 0 0 5px var(--accent);
 }
 
 .projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 20px;
-    padding: 20px;
-    align-items: center;
-    align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  padding: 20px;
+  align-items: center;
+  align-content: center;
 }
 
 .project {
-    border-radius: 10px;
-    padding: 20px;
-    width: 300px;
-    box-shadow: 0 4px 10px var(--shadow);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: var(--text-light);
-    text-align: center;
-    background: var(--card-bg);
-    text-decoration: none;
-    min-height: 250px;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 10px var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: var(--text-light);
+  text-align: center;
+  background: var(--card-bg);
+  text-decoration: none;
+  min-height: 250px;
 }
 
 .project:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px var(--shadow);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px var(--shadow);
 }
 
 .project a {
-    color: var(--text-span);
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-    transition: color 0.3s ease;
+  color: var(--text-span);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .project a:hover {
-    color: var(--accent);
-    text-shadow: 0 0 5px var(--accent);
+  color: var(--accent);
+  text-shadow: 0 0 5px var(--accent);
 }
 
 footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.5);
-    color: var(--text-light);
-    text-align: center;
-    padding: 20px;
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
-    margin-top: 20px;
-    font-size: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--text-light);
+  text-align: center;
+  padding: 20px;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+  font-size: 1.2rem;
 }
 
 footer a {
-    color: var(--text-light);
-    text-decoration: none;
-    transition: color 0.3s ease;
-    gap: 10px;
-    text-shadow: 0 0 5px var(--accent);
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding: 10px;
-    border-radius: 5px;
+  color: var(--text-light);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  gap: 10px;
+  text-shadow: 0 0 5px var(--accent);
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 footer a:hover {
-    color: var(--accent);
-    text-shadow: 0 0 5px var(--accent);
-    text-decoration: underline;
-    text-decoration-color: var(--background-btn);
-    background-color: var(--card-bg);
+  color: var(--accent);
+  text-shadow: 0 0 5px var(--accent);
+  text-decoration: underline;
+  text-decoration-color: var(--background-btn);
+  background-color: var(--card-bg);
 }
 
 .social-media {
-    justify-content: center;
-    gap: 20px;
+  justify-content: center;
+  gap: 20px;
 }
 
 .social-media a {
-    color: var(--text-light);
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
+  color: var(--text-light);
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
 }
 
 .footer-content p {
-    margin: 0;
-    font-size: 1.2rem;
-    color: var(--text-light);
-    text-shadow: 0 0 5px var(--accent);
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--text-light);
+  text-shadow: 0 0 5px var(--accent);
 }
 
 .motto p {
-    font-size: 1.3rem;
-    color: var(--text-muted);
-    text-shadow: 0 0 5px var(--accent);
+  font-size: 1.3rem;
+  color: var(--text-muted);
+  text-shadow: 0 0 5px var(--accent);
 }
 
 @media (max-width: 768px) {
-    .projects-container {
-        flex-direction: column;
-        align-items: center;
-    }
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .project {
-        width: 90%;
-        margin-bottom: 20px;
-    }
+  .project {
+    width: 90%;
+    margin-bottom: 20px;
+  }
 
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .logo {
-        font-size: 2rem;
-    }
+  .logo {
+    font-size: 2rem;
+  }
 
-    .btn1 {
-        font-size: 1rem;
-    }
+  .btn1 {
+    font-size: 1rem;
+  }
 
+  .hero-section {
+    padding-top: 80px;
+  }
 }
