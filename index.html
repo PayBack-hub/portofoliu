@@ -1,189 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofoliul Meu</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <meta name="description" content="Portofoliul meu" >
-    <meta name="author" content="Matei Ionut alis PayBack" >
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Header -->
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>PayBack Portofolio</title>
+    <meta name="description" content="" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="https://www.linkedin.com/in/ionut-matei-b54773357" target="_blank">About</a></li>
-                <li><a href="#proiecte">Projects</a></li>
-                <li><a href="#testimoniale">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <div class="logo">Pay<span class="logo-span">Back</span></div>
+      <nav>
+        <div class="btn-group" role="group">
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle btn1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Social Media
+          </button>
+          <ul class="dropdown-menu" id="dropdown-menu">
+            <li><a class="dropdown-item" id="btn-drop" href="https://facebook.com/sqpxslm/" target="_blank">Facebook</a></li>
+            <li><a class="dropdown-item drop" id="btn-drop" href="https://x.com/SlmSqpx" target="_blank">Twitter</a></li>
+            <li><a class="dropdown-item drop" id="btn-drop" href="https://Instagram.com/sqpxslm/" target="_blank">Instagram</a></li>
+            <li><a class="dropdown-item drop" id="btn-drop" href="https://github.com/PayBack-hub/portofoliu" target="_blank">GitHub</a></li>
+            <li><a class="dropdown-item drop" id="btn-drop" href="https://www.linkedin.com/in/ionut-matei-b54773357/" target="_blank">LinkedIn</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <h1>Bun venit în universul meu digital!</h1>
-        <p>Construiesc soluții creative și funcționale.</p>
+    <section class="hero-section">
+      <h1>Pay<span class="logo-span">Back</span>'s Page</h1>
+      <p>Welcome to my page!</p>
     </section>
-
-    <!-- About me -->
-    <section id="despre">
-        <h2>Despre mine</h2>
-        <div class="despre-container">
-            <p>
-                Sunt pasionat de programare și învăț continuu. 
-                Printre punctele mele forte se numără:
-                <ul>
-                    <li>HTML și CSS avansat</li>
-                    <li>Abilitatea de a învăța rapid</li>
-                    <li>Creativitate în design</li>
-                </ul>
-            </p>
-        </div>
-    </section>
-
-    <!-- Project -->
-    <section id="proiecte">
-        <h2>Proiectele mele</h2>
-        <div class="proiecte-grid">
-            <article class="proiect">
-                <h3>FocusAPP</h3>
-                <p>Landing page pentru o aplicație de productivitate.</p>
-                <p>HTML, CSS, responsive, animații.</p>
-                <a href="./focus-app/index.html" target="_blank">Detalii</a>
-            </article>
-            <article class="proiect">
-                <h3>CV</h3>
-                <p>workflow complet și curat.</p>
-                    <p>HTML, CSS, responsive.</p>
-                <a href="./cv-dark/index.html">Detalii</a>
-            </article>
-            <article class="proiect">
-                <h3>Proiect 1</h3>
-                <p>Soon</p>
-                    <p>Empty.</p>
-                <a href="#detalii">Detalii</a>
-            </article>
-            <article class="proiect">
-                <h3>Proiect 1</h3>
-                <p>Soon</p>
-                    <p>Empty.</p>
-                <a href="#detalii">Detalii</a>
-            </article>
-            <article class="proiect">
-                <h3>Proiect 5</h3>
-                <p>Soon.</p>
-                <a href="#">Detalii</a>
-            </article>
-            <article class="proiect">
-                <h3>Proiect 6</h3>
-                <p>Soon.</p>
-                <a href="#">Detalii</a>
-            </article>
-            <article class="proiect">
-                <h3>Proiect 7</h3>
-                <p>Soon.</p>
-                <a href="#">Detalii</a>
-            </article>
-            <article class="proiect">
-                <h3>Proiect 8</h3>
-                <p>Soon.</p>
-                <a href="#">Detalii</a>
-            </article>
-            <article class="proiect">
-                <h3>Proiect 9</h3>
-                <p>Soon.</p>
-                <a href="#">Detalii</a>
-            </article>
-            <article class="proiect">
-                <h3>Proiect 10</h3>
-                <p>Soon.</p>
-                <a href="#">Detalii</a>
-            </article>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimoniale">
-        <h2>Ce spun alții despre mine</h2>
-        <div class="testimoniale-container">
-            <blockquote class="testimonial">
-                <p>"Un adevărat profesionist!"</p>
-                <cite>- Andrei Popescu</cite>
-            </blockquote>
-            <blockquote class="testimonial">
-                <p>"Pasiunea și dedicația sunt evidente."</p>
-                <cite>- Maria Ionescu</cite>
-            </blockquote>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <form>
-            <label for="nume">Nume</label>
-            <input type="text" id="nume" name="nume" required>
-            
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="mesaj">Mesaj</label>
-            <textarea id="mesaj" name="mesaj" rows="5" required></textarea>
-            
-            <button type="submit">Trimite</button>
-        </form>
-    </section>
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Portofoliul Meu</p>
-        <ul>
-            <li><a href="#">Termeni și condiții</a></li>
-            <li><a href="#">Politica de confidențialitate</a></li>
-        </ul>
-    </footer>
-
-    <!-- Social Media Links -->
-    <div class="social-icons">
-        <a href="https://facebook.com" target="_blank">
-            <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://instagram.com" target="_blank">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://twitter.com" target="_blank">
-            <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://linkedin.com" target="_blank">
-            <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="https://github.com" target="_blank">
-            <i class="fab fa-github"></i>
-        </a>
-        <a href="http://www.youtube.com/@sqpxslm5726" target="_blank">
-            <i class="fab fa-youtube"></i>
-        </a>
-        <a href="https://pinterest.com" target="_blank">
-            <i class="fab fa-pinterest"></i>
-        </a>
-        <a href="https://tiktok.com" target="_blank">
-            <i class="fab fa-tiktok"></i>
-        </a>
-        <a href="https://snapchat.com" target="_blank">
-            <i class="fab fa-snapchat-ghost"></i>
-        </a>
-        <a href="https://whatsapp.com" target="_blank">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-        <a href="https://telegram.org" target="_blank">
-            <i class="fab fa-telegram-plane"></i>
-        </a>
+    <section class="projects">
+      <h1>My Projects</h1>
+        <p id="p">Here are some of my projects:</p>
+    <div class="projects-container">
+      <div class="project">
+        <h2>CV-dark</h2>
+        <p>Modern CV with a dark theme.</p>
+        <p>Built with HTML & CSS.</p>
+        <a href="./cv-dark/index.html" target="_blank">View Project!</a>
+      </div>
+      <div class="project">
+        <h2>Focus App</h2>
+        <p>Focus timer inspired by Pomodoro.</p>
+        <p>Made with CSS Grid & animations.</p>
+        <a href="./focus-app/index.html" target="_blank">View Project!</a>
+      </div>
+      <div class="project">
+        <h2>Proiect 3</h2>
+        <p>Descrierea proiectului 3</p>
+        <p>alta descriere</p>
+        <a href="#">View Project!</a>
+      </div>
     </div>
-    
-    <!-- JavaScript Soon -->
+    </section>
 
-</body>
+    <footer class="text-center p-4">
+      <div class="footer-content">
+        <p>&copy; 2023 My portfolio. All rights reserved.</p>
+    </div>
+        
+        <div class="social-media">
+          <a href="https://facebook.com/sqpxslm/" target="_blank">Facebook</a>
+          <a href="https://www.linkedin.com/in/ionut-matei-b54773357/" target="_blank">LinkedIn</a>
+          <a href="https://Instagram.com/sqpxslm/" target="_blank">Instagram</a>
+        </div>
+        <div class="motto">
+            <p>"I'VE BEEN THROUGH PEOPLE WHO PUSHED MY LIMITS. NOW I KNOW WHAT I DESERVE. I WALK MY PATH WITH DIGNITY."</p>
+        </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

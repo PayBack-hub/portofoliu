@@ -1,0 +1,90 @@
+:root {
+  --negru: #0f0f0f;
+  --gri-inchis: #1e1e1e;
+  --gri-mediu: #2c2c2c;
+  --gri-deschis: #cccccc;
+  --gri-foarte-inchis: #111111;
+
+  --alb: #ffffff;
+
+  --galben: #ffd700;
+  --galben-hover: #ffcc00;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--gri-inchis);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--gri-mediu);  
+}
+
+.logo {
+    font-size: 20px;
+}
+
+.logo h1 {
+    margin: 0;
+    padding-left: 30px;
+    color: var(--alb);
+}
+
+.logo h3 {
+    padding-left: 30px;
+    color: var(--galben);
+    font-size: 24px;
+    font-weight: 400;
+    animation: fadeInText 3s ease-in-out;
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav ul li {
+    position: relative;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: var(--alb);
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.nav ul li a:hover {
+    color: var(--galben-hover);
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    text-shadow: var(--alb) 0px 0px 5px;
+    text-decoration: underline;
+    text-decoration-color: var(--alb);
+    transform: scale(1.05);
+}
+
+
