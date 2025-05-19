@@ -148,7 +148,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 35px;
   margin-top: 20px;
   padding: 20px;
   align-items: center;
@@ -166,6 +166,8 @@ header {
   background: var(--card-bg);
   text-decoration: none;
   min-height: 250px;
+  display: flex;
+  flex-direction: column;
 }
 
 .project:hover {
@@ -179,6 +181,8 @@ header {
   font-size: 1.5rem;
   font-weight: bold;
   transition: color 0.3s ease;
+  margin-top: auto;
+
 }
 
 .project a:hover {
@@ -224,12 +228,17 @@ footer a:hover {
 .social-media {
   justify-content: center;
   gap: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .social-media a {
   color: var(--text-light);
   font-size: 1.5rem;
   transition: color 0.3s ease;
+  text-shadow: 0 0 5px var(--accent);
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .footer-content p {
@@ -237,12 +246,22 @@ footer a:hover {
   font-size: 1.2rem;
   color: var(--text-light);
   text-shadow: 0 0 5px var(--accent);
+  font-weight: bold;
+  text-align: center;
+  margin-top: 25px;
+
 }
 
 .motto p {
   font-size: 1.3rem;
   color: var(--text-muted);
   text-shadow: 0 0 5px var(--accent);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+
 }
 
 @media (max-width: 768px) {
