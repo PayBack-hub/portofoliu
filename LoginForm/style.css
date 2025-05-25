@@ -220,6 +220,7 @@ form {
     gap: 20px;
     font-family: "Oswald", sans-serif;
     margin-right: 15px;
+
 }
 
 .social-link a {
@@ -227,6 +228,7 @@ form {
     color: white;
     font-size: 1.2rem;
     transition: color 0.3s ease-in-out;
+    margin-right: 15px;
 }
 
 .social-link a:hover {
