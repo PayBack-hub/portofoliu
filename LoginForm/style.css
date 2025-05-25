@@ -61,9 +61,8 @@ body, html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
-    font-family: "Oswald", sans-serif;
     height: 100%;
+    gap: 20px;
 }
 
 .textarea {
@@ -96,7 +95,6 @@ form {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     width: 100%;
-    height: 250px;
     padding: 20px;
     background-color: rgba(0, 207, 255, 0.1);
     border-radius: 10px;
@@ -107,6 +105,7 @@ form {
     line-height: 1.5;
     text-align: center;
     backdrop-filter: blur(2px);
+    min-height: 250px
 }
 
 .input-form {
@@ -143,12 +142,18 @@ form {
     transform: scale(1.05);
 }
 
+.input-form ::placeholder {
+    color: white;
+    opacity: 0.9;
+}
+
 .btn {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    position: relative;
+    z-index: 2;
 }
 
 .btn button {
@@ -204,6 +209,14 @@ form {
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
 }
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .footer p {
     color: white;
     font-size: 1.2rem;
@@ -239,8 +252,101 @@ form {
 }
 
 footer {
-    display: flex;
-    justify-content:space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     height: 100px;
+}
+
+.motto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: "Oswald", sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.motto p {
+    margin: 0;
+    padding: 10px;
+    text-shadow: 2px 2px 14px rgba(0, 0, 0, 0.9);
+}
+
+.motto p:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin: auto;
+        height: auto;
+    }
+
+    .stanga, .dreapta {
+        width: 100%;
+        text-align: center;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    .input-form input {
+        width: 80%;
+    }
+    .logo {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+    footer {
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 20px;
+        padding: 20px;
+    }
+    .footer, .social-link, .motto {
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1400px) {
+  .logo {
+    position: relative;
+    width: 200px;
+    height: auto;
+    top: unset;
+    left: unset;
+    margin: 0 auto;
+  }
+
+  .stanga {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .logo img {
+    width: 100%;
+    height: auto;
+  }
 }
